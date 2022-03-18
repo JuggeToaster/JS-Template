@@ -1,7 +1,6 @@
 const myString = "Hello, world!";
 console.log(myString);
 
-
 const färger = ["♠", "♥", "♦", "♣"];
 const valörer = [
   "Ess",
@@ -92,45 +91,111 @@ class Kortlek {
 // Svår: Värdera hand ska meddela om användaren har någon giltig pokerhand.
 // Här finns olika pokerhänder: https://sv.wikipedia.org/wiki/Pokerhand
 
-Min_kortlek = new Kortlek()
+// Min_kortlek = new Kortlek();
 
-for (let i = 0; i < färger.length; i++) {
-    for (let j = 0; j < valörer.length; j++) {
-        nytt_kort = new Kort(valörer[j], färger[i] );
-        Min_kortlek.lägg_till_kort(nytt_kort);
-    }
+// for (let i = 0; i < färger.length; i++) {
+//   for (let j = 0; j < valörer.length; j++) {
+//     nytt_kort = new Kort(valörer[j], färger[i]);
+//     Min_kortlek.lägg_till_kort(nytt_kort);
+//   }
+// }
 
+// visa_lek(nytt_kort);
+
+// let min_lista = [2, 4, 5, 8, 1, 6];
+
+// min_lista.forEach((nummer) => {
+//   console.log("hej", nummer);
+// });
+
+// console.log(pokerhand);
+
+// let count = {
+//   Ess: 0,
+//   2: 0,
+//   3: 0,
+//   4: 0,
+//   5: 0,
+//   6: 0,
+//   7: 0,
+//   8: 0,
+//   9: 0,
+//   10: 0,
+//   Knekt: 0,
+//   Dam: 0,
+//   Kung: 0,
+// };
+
+// pokerhand.forEach((kort) => {
+//   count[kort.valör] = count[kort.valör] + 1;
+//   if (count[kort.valör] == 2) {
+//     console.log("Du har ett par i", kort.valör);
+//   }
+// });
+
+var first_name = "Matija ";
+var last_name = "Durdek";
+console.log(first_name + "" + last_name);
+
+x = 5;
+y = 3;
+console.log(x - y);
+
+x = 6;
+y = 2;
+console.log(x / y);
+
+x = 6;
+y = 2;
+console.log(x ** y);
+
+x = 6;
+y = 2;
+console.log(x % y);
+
+// let age = prompt("Enter your age :");
+
+// if (age < 16) {
+//   console.log("Tyvärr kan du inte övningsköra.");
+// } else {
+//   console.log("Du kan övningsköra.");
+// }
+
+// for (let i = 5; i <= 20; i++) {
+//   console.log(i);
+// }
+
+tal1 = 10;
+tal2 = 5;
+
+function multiplicera(tal1, tal2) {
+  var a = tal1 * tal2;
+  return a;
 }
 
-visa_lek(nytt_kort)
-
-let min_lista = [2, 4, 5, 8, 1, 6]
-
-min_lista.forEach( (nummer) => {
-  console.log("hej", nummer);
-})
-
-console.log(pokerhand)
-
-let count = {
-  Ess: 0,
-  2: 0,
-  3: 0,
-  4: 0,
-  5: 0,
-  6: 0,
-  7: 0,
-  8: 0,
-  9: 0,
-  10: 0, 
-  Knekt: 0,
-  Dam: 0,
-  Kung: 0,
+function dividera(tal1, tal2) {
+  var b = tal1 / tal2;
+  return b;
 }
 
-pokerhand.forEach((kort) => {
-  count[kort.valör] = count[kort.valör] + 1;
-  if (count[kort.valör] == 2) {
-    console.log("Du har ett par i", kort.valör);
-  }
-});
+mult = multiplicera(tal1, tal2);
+console.log(mult);
+
+div = dividera(tal1, tal2);
+console.log(div);
+
+var plats = {
+  address: "Robotvägen 24",
+  postnummer: "722 24",
+  stad: "Västerås",
+};
+
+plats.stad = "Ludvika";
+console.log(plats);
+
+const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(lista[4]);
+
+for (let i = 1; i <= lista.length; i++) {
+  console.log(i);
+}
